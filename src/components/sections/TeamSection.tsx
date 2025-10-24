@@ -100,7 +100,7 @@ const TeamSection: React.FC = () => {
         
         <TeamGrid>
           <MemberCard>
-            <MemberImage style={{ backgroundImage: `url('/src/assets/images/team/logo_Fenias_Cossa.png')` }} />
+            <MemberImage style={{ backgroundImage: `url('/assets/images/team/logo_Fenias_Cossa.png')` }} />
             <MemberInfo>
               <MemberName>Eng. Fenias Cossa</MemberName>
               <MemberRole>Engenheiro de SoftWare e Analista de Dados</MemberRole>
@@ -116,7 +116,7 @@ const TeamSection: React.FC = () => {
           </MemberCard>
           
           <MemberCard>
-            <MemberImage style={{ backgroundImage: `url('/src/assets/images/team/equipe_do_campo.jpg')` }} />
+            <MemberImage style={{ backgroundImage: `url('/assets/images/team/equipe_do_campo.jpg')` }} />
             <MemberInfo>
               <MemberName>Consultoria em Campo</MemberName>
               <MemberRole>Equipa de Isildo</MemberRole>
@@ -132,7 +132,7 @@ const TeamSection: React.FC = () => {
           </MemberCard>
           
           <MemberCard>
-            <MemberImage style={{ backgroundImage: `url('/src/assets/images/team/logo_Isisldo.jpg')` }} />
+            <MemberImage style={{ backgroundImage: `url('/assets/images/team/logo_Isisldo.jpg')` }} />
             <MemberInfo>
               <MemberName>Equipa de Consultoria</MemberName>
               <MemberRole>Consultores Ambientais</MemberRole>

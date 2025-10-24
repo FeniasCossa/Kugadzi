@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 const HeroContainer = styled.section`
   height: 100vh;
-  background-image: url('/src/assets/images/hero-bg.svg');
+  background-image: url('/assets/images/hero-bg.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
