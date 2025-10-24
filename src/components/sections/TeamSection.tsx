@@ -102,7 +102,7 @@ const TeamSection: React.FC = () => {
           <MemberCard>
             <MemberImage style={{ backgroundImage: `url('/src/assets/images/team/logo_Fenias_Cossa.png')` }} />
             <MemberInfo>
-              <MemberName>Eng. Fenias Sebastião</MemberName>
+              <MemberName>Eng. Fenias Cossa</MemberName>
               <MemberRole>Engenheiro de SoftWare e Analista de Dados</MemberRole>
               <MemberBio>
                 Especialista em Desenvolviemento de soluções tecnologicos e Analise de Dados.
