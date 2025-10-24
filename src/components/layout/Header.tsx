@@ -124,10 +124,11 @@ const Header: React.FC = () => {
   return (
     <HeaderContainer>
       <NavContainer>
+
         <Logo>
-          <img src="/dist/assets/images/kugadzi8.png" alt="Kugadzi Consultoria" />
+          <img src="/assets/images/Kugadzi8.png" alt="Kugadzi Consultoria" />
         </Logo>
-        
+
         <MenuButton onClick={toggleMenu}>
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </MenuButton>
