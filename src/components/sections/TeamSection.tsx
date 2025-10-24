@@ -52,7 +52,6 @@ const MemberCard = styled.div`
 const MemberImage = styled.div`
   height: 280px;
   background-color: #e0e0e0;
-  background-image: url('/src/assets/images/team-placeholder.jpg');
   background-size: cover;
   background-position: center;
 `;
@@ -84,7 +83,7 @@ const SocialLinks = styled.div`
 `;
 
 const SocialLink = styled.a`
-  color: #555;
+  color: #126cc7ff;
   font-size: 1.2rem;
   transition: color 0.3s ease;
   
@@ -101,16 +100,48 @@ const TeamSection: React.FC = () => {
         
         <TeamGrid>
           <MemberCard>
-            <MemberImage />
+            <MemberImage style={{ backgroundImage: `url('/src/assets/images/team/logo_Fenias_Cossa.png')` }} />
             <MemberInfo>
               <MemberName>Eng. Fenias Sebastião</MemberName>
-              <MemberRole>Consultor Ambiental & Científico</MemberRole>
+              <MemberRole>Engenheiro de SoftWare e Analista de Dados</MemberRole>
               <MemberBio>
-                Especialista em consultoria ambiental e científica com vasta experiência em projetos de desenvolvimento sustentável.
+                Especialista em Desenvolviemento de soluções tecnologicos e Analise de Dados.
               </MemberBio>
               <SocialLinks>
                 <SocialLink href="#" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin />
+                </SocialLink>
+              </SocialLinks>
+            </MemberInfo>
+          </MemberCard>
+          
+          <MemberCard>
+            <MemberImage style={{ backgroundImage: `url('/src/assets/images/team/equipe_do_campo.jpg')` }} />
+            <MemberInfo>
+              <MemberName>Consultoria em Campo</MemberName>
+              <MemberRole>Equipa de Isildo</MemberRole>
+              <MemberBio>
+                Nossa equipa durante trabalho de campo em projetos de conservação ambiental.
+              </MemberBio>
+              <SocialLinks>
+                <SocialLink href="#" target="_blank" rel="noopener noreferrer">
+                  Saber mais
+                </SocialLink>
+              </SocialLinks>
+            </MemberInfo>
+          </MemberCard>
+          
+          <MemberCard>
+            <MemberImage style={{ backgroundImage: `url('/src/assets/images/team/logo_Isisldo.jpg')` }} />
+            <MemberInfo>
+              <MemberName>Equipa de Consultoria</MemberName>
+              <MemberRole>Consultores Ambientais</MemberRole>
+              <MemberBio>
+                Equipa de consultores durante trabalho de campo com coletes de segurança.
+              </MemberBio>
+              <SocialLinks>
+                <SocialLink href="#" target="_blank" rel="noopener noreferrer">
+                  Saber mais
                 </SocialLink>
               </SocialLinks>
             </MemberInfo>
