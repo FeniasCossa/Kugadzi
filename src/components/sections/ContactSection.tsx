@@ -175,7 +175,7 @@ const ContactSection: React.FC = () => {
             </InfoIcon>
             <InfoText>
               <InfoTitle>Endereço</InfoTitle>
-              <p>Maputo, Moçambique</p>
+              <p>Pemba, Moçambique</p>
             </InfoText>
           </InfoItem>
           
@@ -185,7 +185,7 @@ const ContactSection: React.FC = () => {
             </InfoIcon>
             <InfoText>
               <InfoTitle>Telefone</InfoTitle>
-              <p>+258 84 150 5598</p>
+              <p>+258 84 000 0000</p>
             </InfoText>
           </InfoItem>
           

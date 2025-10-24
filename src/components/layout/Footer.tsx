@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
         <FooterColumn>
           <FooterTitle>Kugadzi Consultoria</FooterTitle>
           <p>Soluções Integradas em Consultoria e Formação</p>
-          <p>NUIT: 123456789</p>
+          <p>NUIT: 401505598,</p>
           <SocialIcons>
             <SocialIcon href="#" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
@@ -124,7 +124,7 @@ const Footer: React.FC = () => {
         
         <FooterColumn>
           <FooterTitle>Contactos</FooterTitle>
-          <p>Maputo, Moçambique</p>
+          <p>Pemba, Moçambique</p>
           <p>Email: info@kugadzi.co.mz</p>
           <p>Tel: +258 84 000 0000</p>
         </FooterColumn>
