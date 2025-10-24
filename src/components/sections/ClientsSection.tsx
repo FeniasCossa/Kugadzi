@@ -77,19 +77,19 @@ const ClientsSection: React.FC = () => {
         
         <ClientsGrid>
           <ClientLogo>
-            <img src="/src/assets/images/clients/mais-valor.png" alt="Mais Valor 2" />
+            <img src="/assets/images/clients/mais-valor.png" alt="Mais Valor 2" />
           </ClientLogo>
           <ClientLogo>
-            <img src="/src/assets/images/clients/unido.png" alt="UNIDO" />
+            <img src="/assets/images/clients/unido.png" alt="UNIDO" />
           </ClientLogo>
           <ClientLogo>
-            <img src="/src/assets/images/clients/oikos.png" alt="OIKOS" />
+            <img src="/assets/images/clients/oikos.png" alt="OIKOS" />
           </ClientLogo>
           <ClientLogo>
-            <img src="/src/assets/images/clients/aics.png" alt="Agenzia Italiana per la Cooperazione allo Sviluppo" />
+            <img src="/assets/images/clients/aics.png" alt="Agenzia Italiana per la Cooperazione allo Sviluppo" />
           </ClientLogo>
           <ClientLogo>
-            <img src="/src/assets/images/clients/maeci.png" alt="Ministero degli Affari Esteri e della Cooperazione Internazionale" />
+            <img src="/assets/images/clients/maeci.png" alt="Ministero degli Affari Esteri e della Cooperazione Internazionale" />
           </ClientLogo>
         </ClientsGrid>
       </ClientsContent>
