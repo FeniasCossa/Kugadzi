@@ -125,7 +125,7 @@ const Header: React.FC = () => {
     <HeaderContainer>
       <NavContainer>
         <Logo>
-          <img src="/src/assets/images/kugadzi8.png" alt="Kugadzi Consultoria" />
+          <img src="/assets/images/kugadzi8.png" alt="Kugadzi Consultoria" />
         </Logo>
         
         <MenuButton onClick={toggleMenu}>
