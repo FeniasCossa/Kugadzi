@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin } from 'react-icons/fa';
 
 const TeamContainer = styled.section`
   padding: 5rem 2rem;
@@ -99,6 +99,26 @@ const TeamSection: React.FC = () => {
         <SectionTitle>Nossa Equipa</SectionTitle>
         
         <TeamGrid>
+          
+          <MemberCard>
+            <MemberImage style={{ backgroundImage: `url('/assets/images/team/logo_isildo_nganhane.png')` }} />
+            <MemberInfo>
+              <MemberName>Mestre Isildo Nganhane</MemberName>
+              <MemberRole>Biologo e Analista de Dados</MemberRole>
+              <MemberBio>
+                Consultor e Docente da Universidade Lúrio, Faculdade de Ciências Naturais Pemba - Recolha e análise de dados
+              </MemberBio>
+              <SocialLinks>
+                <SocialLink href="https://www.linkedin.com/in/isildo-de-nascimento-nganhane-b76169279/" target="_blank">
+                  <FaLinkedin />
+                </SocialLink>
+                <SocialLink href="https://web.facebook.com/isildo.nascimentonganhane" target="_blank">
+                  <FaFacebook />
+                </SocialLink>
+              </SocialLinks>
+            </MemberInfo>
+          </MemberCard>
+
           <MemberCard>
             <MemberImage style={{ backgroundImage: `url('/assets/images/team/logo_Fenias_Cossa.png')` }} />
             <MemberInfo>
