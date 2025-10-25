@@ -108,18 +108,34 @@ const TeamSection: React.FC = () => {
                 Especialista em Desenvolviemento de soluções tecnologicos e Analise de Dados.
               </MemberBio>
               <SocialLinks>
-                <SocialLink href="#" target="_blank" rel="noopener noreferrer">
+                <SocialLink href="#\www.linkedin.com/in/fenias-sebastiao-124769154" target="_blank">
                   <FaLinkedin />
                 </SocialLink>
               </SocialLinks>
             </MemberInfo>
           </MemberCard>
+
+          <MemberCard>
+            <MemberImage style={{ backgroundImage: `url('/assets/images/team/logo_helio.png')` }} />
+            <MemberInfo>
+              <MemberName>PhD Helio Nganhane</MemberName>
+              <MemberRole>PhD em Geologia - Riscos de Origem Natural</MemberRole>
+              <MemberBio>
+                Análise de Risco sobre processos naturais (Inundações, Seca e Dinâmica Costeira)
+              </MemberBio>
+              <SocialLinks>
+                <SocialLink href="https://www.linkedin.com/in/helio-nganhane-27755173/" target="_blank">
+                  <FaLinkedin />
+                </SocialLink>
+              </SocialLinks>
+            </MemberInfo>
+          </MemberCard> 
           
           <MemberCard>
             <MemberImage style={{ backgroundImage: `url('/assets/images/team/equipe_do_campo.jpg')` }} />
             <MemberInfo>
               <MemberName>Consultoria em Campo</MemberName>
-              <MemberRole>Equipa de Isildo</MemberRole>
+              <MemberRole>Equipa do Mestre Isildo</MemberRole>
               <MemberBio>
                 Nossa equipa durante trabalho de campo em projetos de conservação ambiental.
               </MemberBio>
