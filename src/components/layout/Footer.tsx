@@ -112,6 +112,7 @@ const Footer: React.FC = () => {
           <FooterLink href="#">Sobre Nós</FooterLink>
           <FooterLink href="#">Serviços</FooterLink>
           <FooterLink href="#">Contactos</FooterLink>
+          <FooterLink href="/trabalhos-realizados">Trabalhos realizados</FooterLink>
         </FooterColumn>
         
         <FooterColumn>

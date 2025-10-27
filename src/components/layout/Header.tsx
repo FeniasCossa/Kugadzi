@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-scroll';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import QuoteModal from './QuoteModal';
 
 const HeaderContainer = styled.header`
   position: fixed;
@@ -61,7 +62,7 @@ const NavItem = styled.div`
   }
 `;
 
-const NavLink = styled(Link)`
+const RouteNavLink = styled(RouterLink)`
   color: #333;
   font-weight: 500;
   text-decoration: none;
@@ -69,10 +70,6 @@ const NavLink = styled(Link)`
   transition: color 0.3s ease;
   
   &:hover {
-    color: #1a73e8;
-  }
-  
-  &.active {
     color: #1a73e8;
   }
 `;
@@ -112,6 +109,9 @@ const MenuButton = styled.button`
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState<string>('');
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -119,6 +119,12 @@ const Header: React.FC = () => {
   
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+  
+  const openQuoteModal = () => {
+    setSelectedService('');
+    setIsQuoteOpen(true);
+    closeMenu();
   };
   
   return (
@@ -135,35 +141,46 @@ const Header: React.FC = () => {
         
         <NavMenu $isOpen={isMenuOpen}>
           <NavItem>
-            <NavLink to="home" smooth={true} duration={500} onClick={closeMenu}>
+            <RouteNavLink to="/#home" onClick={closeMenu}>
               Início
-            </NavLink>
+            </RouteNavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="about" smooth={true} duration={500} onClick={closeMenu}>
+            <RouteNavLink to="/#about" onClick={closeMenu}>
               Sobre
-            </NavLink>
+            </RouteNavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="services" smooth={true} duration={500} onClick={closeMenu}>
+            <RouteNavLink to="/#services" onClick={closeMenu}>
               Serviços
-            </NavLink>
+            </RouteNavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="team" smooth={true} duration={500} onClick={closeMenu}>
+            <RouteNavLink to="/#team" onClick={closeMenu}>
               Equipa
-            </NavLink>
+            </RouteNavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="contact" smooth={true} duration={500} onClick={closeMenu}>
+            <RouteNavLink to="/#contact" onClick={closeMenu}>
               Contactos
-            </NavLink>
+            </RouteNavLink>
+          </NavItem>
+          <NavItem>
+            <RouteNavLink to="/trabalhos-realizados" onClick={closeMenu}>
+              Trabalhos realizados
+            </RouteNavLink>
           </NavItem>
           
-          <CtaButton onClick={closeMenu}>
+          <CtaButton onClick={openQuoteModal}>
             Solicitar Orçamento
           </CtaButton>
         </NavMenu>
+        
+        <QuoteModal 
+          isOpen={isQuoteOpen}
+          onClose={() => setIsQuoteOpen(false)}
+          serviceName={selectedService}
+        />
       </NavContainer>
     </HeaderContainer>
   );

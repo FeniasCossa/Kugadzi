@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 
 const HeroContainer = styled.section`
   height: 100vh;
@@ -110,6 +111,30 @@ const Button = styled(Link)<{ $primary?: boolean }>`
   }
 `;
 
+const RouteButton = styled(RouterLink)<{ $primary?: boolean }>`
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  
+  background-color: ${props => props.$primary ? '#1a73e8' : 'transparent'};
+  color: white;
+  border: ${props => props.$primary ? 'none' : '2px solid white'};
+  
+  &:hover {
+    background-color: ${props => props.$primary ? '#0d62c9' : 'rgba(255, 255, 255, 0.1)'};
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 480px) {
+    width: 100%;
+    text-align: center;
+  }
+`;
+
 const HeroSection: React.FC = () => {
   return (
     <HeroContainer id="home">
@@ -123,6 +148,9 @@ const HeroSection: React.FC = () => {
           <Button to="contact" smooth={true} duration={500}>
             Contacte-nos
           </Button>
+          <RouteButton to="/trabalhos-realizados">
+            Ver Trabalhos Realizados
+          </RouteButton>
         </ButtonContainer>
       </HeroContent>
     </HeroContainer>
